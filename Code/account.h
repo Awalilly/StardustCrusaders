@@ -16,7 +16,7 @@ public:
 
     account();
 
-    account(string uname);  //lo uname interpellato Ë quello del giocatore gi‡ loggato
+    account(string uname);  //lo uname interpellato √® quello del giocatore gi√† loggato
 
     void encrypt(string f_name, string uname);
     void decrypt(string f_name, string uname);
