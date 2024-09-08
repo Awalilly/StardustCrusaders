@@ -1,13 +1,3 @@
-//
-//  Game.cpp
-//  Stardust Crusaders
-//
-//  Created by Matteo Gallo on 13/07/22.
-//http://www.kammerl.de/ascii/AsciiSignature.php
-//https://en.wikipedia.org/wiki/ANSI_escape_code
-//https://stackoverflow.com/questions/2616906/how-do-i-output-coloured-text-to-a-linux-terminal
-
-
 #include "Game.h"
 #include "account.cpp"
 #include "grid.cpp"
