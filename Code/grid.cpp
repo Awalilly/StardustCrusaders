@@ -1,10 +1,3 @@
-//
-//  grid.cpp
-//  Stardust Crusaders
-//
-//  Created by Matteo Gallo on 09/04/22.
-//
-
 #include "grid.h"
 //#include "Game.cpp"
 #include "ship.h"
