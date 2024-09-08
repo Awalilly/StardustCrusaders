@@ -1,11 +1,3 @@
-//
-//  Account.cpp
-//  Stardust Crusaders
-//
-//  Created by Matteo Gallo on 06/08/22.
-//
-
-
 #include <fstream>
 #include <cstdio>
 #include <stdio.h>
