@@ -85,7 +85,7 @@ void getStats(){
 
     file_to_check_existance.open(f_name);
 
-    if(!file_to_check_existance){ //Se il file non esiste è perché l'utente non ha ancora mai giocato
+    if(!file_to_check_existance){ //Se il file non esiste Ã¨ perchÃ© l'utente non ha ancora mai giocato
 
         cout << "Non sono presenti dati sulle tue partite" << endl;
         cout << "Gioca una partita per registrare le tue statistiche" << endl;
@@ -111,7 +111,7 @@ void getStats(){
 
         for(int i = 0; i < mode.size(); i ++){
             if(mode [i] == 1){
-                temp1.push_back(i); //riempio il vettore temp con gli indici che mi interessano per selezionare la modalità vs Human
+                temp1.push_back(i); //riempio il vettore temp con gli indici che mi interessano per selezionare la modalitÃ  vs Human
             }else{
                 temp2.push_back(i);
             }
@@ -158,9 +158,9 @@ void getStats(){
 
                 n_vic_Vs_H++;
 
-                if(Kind_vsH[i] == 1) //modalità normale
+                if(Kind_vsH[i] == 1) //modalitÃ  normale
                     vic_normal_mode_Vs_H++;
-                else                 //modalità fast
+                else                 //modalitÃ  fast
                     vic_fast_mode_Vs_H++;
             }else
                 n_def_Vs_H++;
@@ -171,11 +171,11 @@ void getStats(){
         perc_vic_f_H = (vic_fast_mode_Vs_H /(double) n_vic_Vs_H) * 100;
 
         cout << "\n\n\n";
-        cout << "In modalità multigiocatore hai vinto " << n_vic_Vs_H << " volte, mentre hai perso " << n_def_Vs_H << " volte" << endl;
+        cout << "In modalitÃ  multigiocatore hai vinto " << n_vic_Vs_H << " volte, mentre hai perso " << n_def_Vs_H << " volte" << endl;
         cout << "\n";
-        cout << "La tua percentuale di vittoria in questa modalità e' pari al " << setprecision(4) << perc_vic_Vs_H << "%" << endl;
+        cout << "La tua percentuale di vittoria in questa modalitÃ  e' pari al " << setprecision(4) << perc_vic_Vs_H << "%" << endl;
         cout << "\n";
-        cout << "Giocando una partita classica la tua percentuale di vittoria e' pari al " << setprecision(4) << perc_vic_n_H << "%, mentre in modalità veloce " <<  setprecision(2) << perc_vic_f_H << "%" <<  endl;
+        cout << "Giocando una partita classica la tua percentuale di vittoria e' pari al " << setprecision(4) << perc_vic_n_H << "%, mentre in modalitÃ  veloce " <<  setprecision(2) << perc_vic_f_H << "%" <<  endl;
         cout << "\n\n\n";
 
 
@@ -184,9 +184,9 @@ void getStats(){
 
                 n_vic_Vs_C++;
 
-                if(Kind_vsC[i] == 1) //modalità normale
+                if(Kind_vsC[i] == 1) //modalitÃ  normale
                     vic_normal_mode_Vs_C++;
-                else                 //modalità fast
+                else                 //modalitÃ  fast
                     vic_fast_mode_Vs_C++;
             }
             else
@@ -201,9 +201,9 @@ void getStats(){
 
         cout << "Hai vinto contro il computer " << n_vic_Vs_C << " volte, mentre sei stato sconfitto " << n_def_Vs_C << " volte" << endl;
         cout << "\n";
-        cout << "La tua percentuale di vittoria in questa modalità e' pari al " << setprecision(4) << perc_vic_Vs_C << "%" << endl;
+        cout << "La tua percentuale di vittoria in questa modalitÃ  e' pari al " << setprecision(4) << perc_vic_Vs_C << "%" << endl;
         cout << "\n";
-        cout << "Hai vinto il " << setprecision(4) << perc_vic_n_C << "% giocando ad una partita classica e il " <<  setprecision(4) << perc_vic_f_C << "% in modalità veloce" <<  endl;
+        cout << "Hai vinto il " << setprecision(4) << perc_vic_n_C << "% giocando ad una partita classica e il " <<  setprecision(4) << perc_vic_f_C << "% in modalitÃ  veloce" <<  endl;
 
         cout << "\n\n\n";
 
