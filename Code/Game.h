@@ -15,16 +15,16 @@ public:
 
     game();
 
-    //game(bool m, bool s, int n, int d, string name1, string name2, bool p1, bool p2); //l'oggetto game si porta le caratterische generali dietro, quindi modalit‡, stato del match, numero di navi e dimensione della griglia
+    //game(bool m, bool s, int n, int d, string name1, string name2, bool p1, bool p2); //l'oggetto game si porta le caratterische generali dietro, quindi modalit√†, stato del match, numero di navi e dimensione della griglia
 
-    void PrintMenu();   //conterr‡ un print con dentro titolo del gioco, autori e gioca/esci, se gioca allora esce dalla funzione ed entra in SetGameMode
+    void PrintMenu();   //conterr√† un print con dentro titolo del gioco, autori e gioca/esci, se gioca allora esce dalla funzione ed entra in SetGameMode
 
     void PrintInstructions();
 
 
-    void SetGameMode(); //nel nostro caso assegner‡ dei valori a variabili come la dimensione della grid, il numero di navi e se cpu vs p o pvp, dopo di che si passa a whostart
+    void SetGameMode(); //nel nostro caso assegner√† dei valori a variabili come la dimensione della grid, il numero di navi e se cpu vs p o pvp, dopo di che si passa a whostart
 
-    bool GetStatus() const;   //restituisce lo stato della partita, se la partita Ë in corso = true
+    bool GetStatus() const;   //restituisce lo stato della partita, se la partita √® in corso = true
 
     bool GetMode() const;
 
@@ -43,10 +43,10 @@ public:
     string GetP2Name () const;
 
 
-    //BISOGNA DECIDERE SE RAGGRUPPARE IN UN'UNICA FUNZIONE  LE DUE SEGUENTI, PER ORA MI SEMBRA PIŸ COMODO COSÃ
+    //BISOGNA DECIDERE SE RAGGRUPPARE IN UN'UNICA FUNZIONE  LE DUE SEGUENTI, PER ORA MI SEMBRA PI√ô COMODO COS√å
     void Play(); //racchiude tutte le funzioni necessarie per giocare intera partita, esce quando il while che gira sulle navi distrutte raggiunge il numero dato dal setgamemode
 
-    void PrintWinnerScreen();   //stampa una schermata con sopra il nome del vincitore e dei complimenti, magari mettere possibilit‡ di rigiocare con cin che setta un bool che permette di stare dentro un while grosso nel main
+    void PrintWinnerScreen();   //stampa una schermata con sopra il nome del vincitore e dei complimenti, magari mettere possibilit√† di rigiocare con cin che setta un bool che permette di stare dentro un while grosso nel main
 
 private:
 
